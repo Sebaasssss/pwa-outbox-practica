@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #222;
+  line-height: 1.4;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #222;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.badge {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.badge.online {
+  background: #fff;
+  color: #222;
+}
+
+.badge.offline {
+  background: transparent;
+  color: #fff;
+  border: 1px dashed #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 6px;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+.header-lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.header-lista h2 {
+  margin: 0;
+}
+
+#btn-purgar {
+  background: #fff;
+  color: #222;
+  border: 1px solid #222;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+}
+
+#btn-purgar:hover {
+  background: #eee;
+}
+
+#lista-outbox {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#lista-outbox li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+#lista-outbox li:first-child {
+  border-top: 0;
+}
+
+.titulo {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.estado {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.estado.pendiente {
+  background: #fff;
+  color: #222;
+  border: 1px dashed #222;
+}
+
+.estado.sincronizado {
+  background: #222;
+  color: #fff;
+  border: 1px solid #222;
+}
+
+.hora {
+  color: #777;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.vacio {
+  color: #777;
+  font-size: 0.9rem;
+}
